@@ -88,6 +88,11 @@ uint64_t tx    = 0;
 uint64_t rx    = 0;
 ev_tstamp last = 0;
 char *prefix;
+#else
+uint64_t tx    = 0;
+uint64_t rx    = 0;
+ev_tstamp last = 0;
+int should_traffic_log = 0;
 #endif
 
 #include "obfs.c" // I don't want to modify makefile
@@ -274,9 +279,9 @@ static void server_recv_cb(EV_P_ ev_io *w, int revents)
                     }
                 }
                 // SSR end
-#ifdef ANDROID
+//#ifdef ANDROID
                 tx += r;
-#endif
+//#endif
             }
 
             if (!remote->send_ctx->connected) {
@@ -668,6 +673,15 @@ static void stat_update_cb(struct ev_loop *loop)
         last = now;
     }
 }
+#else
+static void stat_update_cb(struct ev_loop *loop)
+{
+    ev_tstamp now = ev_now(loop);
+    if (now - last > 1.0) {
+        LOGI("tx:%llu, rx:%llu",tx, rx);
+        last = now;
+    }
+}
 
 #endif
 
@@ -697,6 +711,9 @@ static void remote_recv_cb(EV_P_ ev_io *w, int revents)
 #ifdef ANDROID
     stat_update_cb(loop);
 #endif
+    if(should_traffic_log == 1) {
+        stat_update_cb(loop);
+    }
 
     ssize_t r = recv(remote->fd, server->buf->array, BUF_SIZE, 0);
 
@@ -721,9 +738,9 @@ static void remote_recv_cb(EV_P_ ev_io *w, int revents)
     server->buf->len = r;
 
     if (!remote->direct) {
-#ifdef ANDROID
+//#ifdef ANDROID
         rx += server->buf->len;
-#endif
+//#endif
         if ( r == 0 )
             return;
         // SSR beg
@@ -1134,6 +1151,7 @@ int main(int argc, char **argv)
         { "mtu"      , required_argument, 0, 0 },
         { "mptcp"    , no_argument      , 0, 0 },
         { "help"     , no_argument      , 0, 0 },
+        { "traffic"  , required_argument, 0, 0 },
         {           0,                 0, 0, 0 }
     };
 
@@ -1164,6 +1182,8 @@ int main(int argc, char **argv)
             } else if (option_index == 4) {
                 usage();
                 exit(EXIT_SUCCESS);
+            } else if (option_index == 5) {
+                should_traffic_log = 1;
             }
             break;
         case 's':
