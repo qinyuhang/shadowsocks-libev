@@ -78,6 +78,10 @@
 #ifndef BUF_SIZE
 #define BUF_SIZE 2048
 #endif
+////if you need using --traffic=1 param, uncomment next three lines, if not leave it alone
+//#ifndef LOG_TRAFFIC
+//#define LOG_TRAFFIC
+//#endif 
 
 int verbose = 0;
 int keep_resolving = 1;
@@ -88,7 +92,8 @@ uint64_t tx    = 0;
 uint64_t rx    = 0;
 ev_tstamp last = 0;
 char *prefix;
-#else
+#endif
+#ifdef LOG_TRAFFIC
 uint64_t tx    = 0;
 uint64_t rx    = 0;
 ev_tstamp last = 0;
@@ -279,9 +284,9 @@ static void server_recv_cb(EV_P_ ev_io *w, int revents)
                     }
                 }
                 // SSR end
-//#ifdef ANDROID
+#if defined(ANDROID) || defined(LOG_TRAFFIC)
                 tx += r;
-//#endif
+#endif
             }
 
             if (!remote->send_ctx->connected) {
@@ -673,7 +678,8 @@ static void stat_update_cb(struct ev_loop *loop)
         last = now;
     }
 }
-#else
+#endif
+#ifdef LOG_TRAFFIC
 static void stat_update_cb(struct ev_loop *loop)
 {
     ev_tstamp now = ev_now(loop);
@@ -682,7 +688,6 @@ static void stat_update_cb(struct ev_loop *loop)
         last = now;
     }
 }
-
 #endif
 
 static void remote_timeout_cb(EV_P_ ev_timer *watcher, int revents)
@@ -738,9 +743,9 @@ static void remote_recv_cb(EV_P_ ev_io *w, int revents)
     server->buf->len = r;
 
     if (!remote->direct) {
-//#ifdef ANDROID
+#if defined(ANDROID) || defined(LOG_TRAFFIC)
         rx += server->buf->len;
-//#endif
+#endif
         if ( r == 0 )
             return;
         // SSR beg
@@ -1151,7 +1156,9 @@ int main(int argc, char **argv)
         { "mtu"      , required_argument, 0, 0 },
         { "mptcp"    , no_argument      , 0, 0 },
         { "help"     , no_argument      , 0, 0 },
+#ifdef LOG_TRAFFIC
         { "traffic"  , required_argument, 0, 0 },
+#endif
         {           0,                 0, 0, 0 }
     };
 
@@ -1182,9 +1189,13 @@ int main(int argc, char **argv)
             } else if (option_index == 4) {
                 usage();
                 exit(EXIT_SUCCESS);
-            } else if (option_index == 5) {
+            } 
+#ifdef LOG_TRAFFIC
+            else if (option_index == 5) {
                 should_traffic_log = 1;
             }
+#endif
+                
             break;
         case 's':
             if (remote_num < MAX_REMOTE_NUM) {
