@@ -35,7 +35,6 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h>
 #include <pthread.h>
 #endif
 
@@ -485,6 +484,12 @@ static void remote_send_cb(EV_P_ ev_io *w, int revents)
             }
 
             // SSR beg
+            server_info _server_info;
+            if (server->obfs_plugin) {
+                server->obfs_plugin->get_server_info(server->obfs, &_server_info);
+                _server_info.head_len = get_head_size(abuf->array, abuf->len, 30);
+                server->obfs_plugin->set_server_info(server->obfs, &_server_info);
+            }
             if (server->protocol_plugin) {
                 obfs_class *protocol_plugin = server->protocol_plugin;
                 if (protocol_plugin->client_pre_encrypt) {
@@ -735,10 +740,17 @@ static void accept_cb(EV_P_ ev_io *w, int revents)
 
 #ifdef ANDROID
     if (vpn) {
-        if (protect_socket(remotefd) == -1) {
-            ERROR("protect_socket");
-            close(remotefd);
-            return;
+        int not_protect = 0;
+        if (remote_addr->sa_family == AF_INET) {
+            struct sockaddr_in *s = (struct sockaddr_in *)remote_addr;
+            if (s->sin_addr.s_addr == inet_addr("127.0.0.1")) not_protect = 1;
+        }
+        if (!not_protect) {
+            if (protect_socket(remotefd) == -1) {
+                ERROR("protect_socket");
+                close(remotefd);
+                return;
+            }
         }
     }
 #endif
