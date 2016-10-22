@@ -46,6 +46,7 @@ obfs_class * new_obfs_class(char *plugin_name)
     if (strcmp(plugin_name, "plain") == 0)
         return NULL;
     init_crc32_table();
+    init_shift128plus();
     if (strcmp(plugin_name, "http_simple") == 0) {
         obfs_class * plugin = (obfs_class*)malloc(sizeof(obfs));
         plugin->init_data = init_data;
@@ -152,6 +153,8 @@ obfs_class * new_obfs_class(char *plugin_name)
 
         plugin->client_pre_encrypt = auth_aes128_sha1_client_pre_encrypt;
         plugin->client_post_decrypt = auth_aes128_sha1_client_post_decrypt;
+        plugin->client_udp_pre_encrypt = auth_aes128_sha1_client_udp_pre_encrypt;
+        plugin->client_udp_post_decrypt = auth_aes128_sha1_client_udp_post_decrypt;
 
         return plugin;
     } else if (strcmp(plugin_name, "auth_aes128_sha1") == 0) {
@@ -164,6 +167,8 @@ obfs_class * new_obfs_class(char *plugin_name)
 
         plugin->client_pre_encrypt = auth_aes128_sha1_client_pre_encrypt;
         plugin->client_post_decrypt = auth_aes128_sha1_client_post_decrypt;
+        plugin->client_udp_pre_encrypt = auth_aes128_sha1_client_udp_pre_encrypt;
+        plugin->client_udp_post_decrypt = auth_aes128_sha1_client_udp_post_decrypt;
 
         return plugin;
     }
