@@ -826,10 +826,10 @@ int auth_aes128_sha1_client_post_decrypt(obfs *self, char **pplaindata, int data
         memintcopy_lt(key + key_len - 4, local->recv_id);
 
         {
-            uint8_t hash[20];
-            local->hmac((char*)hash, (char*)recv_buffer, 2, key, key_len);
+            char hash[20];
+            local->hmac(hash, (char*)recv_buffer, 2, key, key_len);
 
-            if (hash[0] != recv_buffer[2] || hash[1] != recv_buffer[3]) {
+            if (memcmp(hash, recv_buffer + 2, 2)) {
                 local->recv_buffer_size = 0;
                 error = 1;
                 break;
@@ -846,13 +846,9 @@ int auth_aes128_sha1_client_post_decrypt(obfs *self, char **pplaindata, int data
             break;
 
         {
-            uint8_t hash[20];
-            local->hmac((char*)hash, (char *)recv_buffer, length - 4, key, key_len);
-            if (hash[0] != recv_buffer[length - 4]
-                || hash[1] != recv_buffer[length - 3]
-                || hash[2] != recv_buffer[length - 2]
-                || hash[3] != recv_buffer[length - 1]
-                )
+            char hash[20];
+            local->hmac(hash, (char *)recv_buffer, length - 4, key, key_len);
+            if (memcmp(hash, recv_buffer + length - 4, 4))
             {
                 local->recv_buffer_size = 0;
                 error = 1;
@@ -889,4 +885,53 @@ int auth_aes128_sha1_client_post_decrypt(obfs *self, char **pplaindata, int data
     free(out_buffer);
     free(key);
     return len;
+}
+
+int auth_aes128_sha1_client_udp_pre_encrypt(obfs *self, char **pplaindata, int datalength, size_t* capacity) {
+    char *plaindata = *pplaindata;
+    auth_simple_local_data *local = (auth_simple_local_data*)self->l_data;
+    char * out_buffer = (char*)malloc(datalength + 8);
+    uint8_t uid[4];
+    rand_bytes(uid, 4);
+
+    if (local->user_key == NULL) {
+        local->user_key_len = self->server.key_len;
+        local->user_key = (uint8_t*)malloc(local->user_key_len);
+        memcpy(local->user_key, self->server.key, local->user_key_len);
+    }
+
+    int outlength = datalength + 8;
+    memmove(out_buffer, plaindata, datalength);
+    memmove(out_buffer + datalength, uid, 4);
+
+    {
+        char hash[20];
+        local->hmac(hash, out_buffer, outlength - 4, local->user_key, local->user_key_len);
+        memmove(out_buffer + outlength - 4, hash, 4);
+    }
+
+    if (*capacity < outlength) {
+        *pplaindata = (char*)realloc(*pplaindata, *capacity = outlength * 2);
+        plaindata = *pplaindata;
+    }
+    memmove(plaindata, out_buffer, outlength);
+    return outlength;
+}
+
+int auth_aes128_sha1_client_udp_post_decrypt(obfs *self, char **pplaindata, int datalength, size_t* capacity) {
+    if (datalength <= 4)
+        return 0;
+
+    char *plaindata = *pplaindata;
+    auth_simple_local_data *local = (auth_simple_local_data*)self->l_data;
+
+    char hash[20];
+    local->hmac(hash, plaindata, datalength - 4, local->user_key, local->user_key_len);
+
+    if (memcmp(hash, plaindata + datalength - 4, 4))
+    {
+        return 0;
+    }
+
+    return datalength - 4;
 }
