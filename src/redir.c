@@ -882,16 +882,13 @@ accept_cb(EV_P_ ev_io *w, int revents)
     if (server->obfs_plugin)
         server->obfs_plugin->set_server_info(server->obfs, &_server_info);
 
-    _server_info.param = NULL;
+    _server_info.param = listener->protocol_param;
     _server_info.g_data = listener->list_protocol_global[remote->remote_index];
 
     if (server->protocol_plugin)
         server->protocol_plugin->set_server_info(server->protocol, &_server_info);
     // SSR end
 
-    // listen to remote connected event
-    ev_io_start(EV_A_ & remote->send_ctx->io);
-    ev_timer_start(EV_A_ & remote->send_ctx->watcher);
     if (verbose) {
         int port = ((struct sockaddr_in*)&destaddr)->sin_port;
         port = (uint16_t)(port >> 8 | port << 8);
@@ -900,6 +897,8 @@ accept_cb(EV_P_ ev_io *w, int revents)
 
     // listen to remote connected event
     ev_io_start(EV_A_ & remote->send_ctx->io);
+    ev_timer_start(EV_A_ & remote->send_ctx->watcher);
+    ev_io_start(EV_A_ & server->recv_ctx->io);
 }
 
 void
@@ -924,6 +923,7 @@ main(int argc, char **argv)
     char *password = NULL;
     char *timeout = NULL;
     char *protocol = NULL; // SSR
+    char *protocol_param = NULL; // SSR
     char *method = NULL;
     char *obfs = NULL; // SSR
     char *obfs_param = NULL; // SSR
@@ -995,6 +995,7 @@ main(int argc, char **argv)
             obfs = optarg;
             break;
         case 'G':
+            protocol_param = optarg;
             break;
         case 'g':
             obfs_param = optarg;
@@ -1075,6 +1076,10 @@ main(int argc, char **argv)
             protocol = conf->protocol;
             LOGI("protocol %s", protocol);
         }
+        if (protocol_param == NULL) {
+            protocol_param = conf->protocol_param;
+            LOGI("protocol_param %s", protocol_param);
+        }
         if (method == NULL) {
             method = conf->method;
             LOGI("method %s", method);
@@ -1106,7 +1111,17 @@ main(int argc, char **argv)
 #ifdef HAVE_SETRLIMIT
         if (nofile == 0) {
             nofile = conf->nofile;
-    }
+    	}
+        /*
+         * no need to check the return value here since we will show
+         * the user an error message if setrlimit(2) fails
+         */
+        if (nofile > 1024) {
+            if (verbose) {
+                LOGI("setting NOFILE to %d", nofile);
+            }
+            set_nofile(nofile);
+        }
 #endif
     }
     if (protocol && strcmp(protocol, "verify_sha1") == 0) {
@@ -1187,6 +1202,7 @@ main(int argc, char **argv)
     listen_ctx.timeout = atoi(timeout);
     // SSR beg
     listen_ctx.protocol_name = protocol;
+    listen_ctx.protocol_param = protocol_param;
     listen_ctx.method = m;
     listen_ctx.obfs_name = obfs;
     listen_ctx.obfs_param = obfs_param;
