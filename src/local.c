@@ -90,9 +90,9 @@
 #define BUF_SIZE 2048
 #endif
 ////if you need using --traffic=1 param, uncomment next three lines, if not leave it alone
-//#ifndef LOG_TRAFFIC
-//#define LOG_TRAFFIC
-//#endif 
+#ifndef LOG_TRAFFIC
+#define LOG_TRAFFIC
+#endif 
 
 int verbose = 0;
 int keep_resolving = 1;
