@@ -114,8 +114,6 @@ static int nofile = 0;
 #endif
 #endif
 
-static int auth = 0;
-
 static void server_recv_cb(EV_P_ ev_io *w, int revents);
 static void server_send_cb(EV_P_ ev_io *w, int revents);
 static void remote_recv_cb(EV_P_ ev_io *w, int revents);
@@ -292,10 +290,6 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
                 LOGE("invalid remote");
                 close_and_free_server(EV_A_ server);
                 return;
-            }
-
-            if (!remote->direct && remote->send_ctx->connected && auth) {
-                ss_gen_hash(remote->buf, &remote->counter, server->e_ctx, BUF_SIZE);
             }
 
             // insert shadowsocks header
@@ -660,26 +654,24 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
 
             if (acl) {
                 int host_match = acl_match_host(host);
-                int ip_match   = acl_match_host(ip);
-
-                int bypass = get_acl_mode() == WHITE_LIST;
-
-                if (get_acl_mode() == BLACK_LIST) {
-                    if (ip_match > 0)
-                        bypass = 1;               // bypass IPs in black list
-
-                    if (host_match > 0)
-                        bypass = 1;                 // bypass hostnames in black list
-                    else if (host_match < 0)
-                        bypass = 0;                      // proxy hostnames in white list
-                } else if (get_acl_mode() == WHITE_LIST) {
-                    if (ip_match < 0)
-                        bypass = 0;               // proxy IPs in white list
-
-                    if (host_match < 0)
-                        bypass = 0;                 // proxy hostnames in white list
-                    else if (host_match > 0)
-                        bypass = 1;                      // bypass hostnames in black list
+                int bypass = 0;
+                if (host_match > 0)
+                    bypass = 1;                 // bypass hostnames in black list
+                else if (host_match < 0)
+                    bypass = 0;                 // proxy hostnames in white list
+                else {
+                    int ip_match = acl_match_host(ip);
+                    switch (get_acl_mode()) {
+                        case BLACK_LIST:
+                            if (ip_match > 0)
+                                bypass = 1;               // bypass IPs in black list
+                            break;
+                        case WHITE_LIST:
+                            bypass = 1;
+                            if (ip_match < 0)
+                                bypass = 0;               // proxy IPs in white list
+                            break;
+                    }
                 }
 
                 if (bypass) {
@@ -746,15 +738,6 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
             // SSR end
 
             if (!remote->direct) {
-                if (auth) {
-                    abuf->array[0] |= ONETIMEAUTH_FLAG;
-                    ss_onetimeauth(abuf, server->e_ctx->evp.iv, BUF_SIZE);
-                }
-
-                if (buf->len > 0 && auth) {
-                    ss_gen_hash(buf, &remote->counter, server->e_ctx, BUF_SIZE);
-                }
-
                 brealloc(remote->buf, buf->len + abuf->len, BUF_SIZE);
                 memcpy(remote->buf->array, abuf->array, abuf->len);
                 remote->buf->len = buf->len + abuf->len;
@@ -1414,7 +1397,7 @@ main(int argc, char **argv)
             usage();
             exit(EXIT_SUCCESS);
         case 'A':
-            auth = 1;
+            LOGI("The 'A' argument is deprecate! Ignored.");
             break;
         case '6':
             ipv6first = 1;
@@ -1492,9 +1475,6 @@ main(int argc, char **argv)
         if (user == NULL) {
             user = conf->user;
         }
-        if (auth == 0) {
-            auth = conf->auth;
-        }
         if (fast_open == 0) {
             fast_open = conf->fast_open;
         }
@@ -1514,7 +1494,7 @@ main(int argc, char **argv)
 #endif
     }
     if (protocol && strcmp(protocol, "verify_sha1") == 0) {
-        auth = 1;
+        LOGI("The verify_sha1 protocol is deprecate! Fallback to origin protocol.");
         protocol = NULL;
     }
 
@@ -1562,15 +1542,12 @@ main(int argc, char **argv)
         LOGI("using tcp fast open");
 #else
         LOGE("tcp fast open is not supported by this environment");
+        fast_open = 0;
 #endif
     }
 
     if (ipv6first) {
         LOGI("resolving hostname to IPv6 address first");
-    }
-
-    if (auth) {
-        LOGI("onetime authentication enabled");
     }
 
 #ifdef __MINGW32__
@@ -1654,7 +1631,7 @@ main(int argc, char **argv)
     if (mode != TCP_ONLY) {
         LOGI("udprelay enabled");
         init_udprelay(local_addr, local_port, listen_ctx.remote_addr[0],
-                      get_sockaddr_len(listen_ctx.remote_addr[0]), mtu, m, auth, listen_ctx.timeout, iface, protocol, protocol_param);
+                      get_sockaddr_len(listen_ctx.remote_addr[0]), mtu, m, listen_ctx.timeout, iface, protocol, protocol_param);
     }
 
 #ifdef HAVE_LAUNCHD
@@ -1743,7 +1720,6 @@ start_ss_local_server(profile_t profile)
     int mtu           = 0;
     int mptcp         = 0;
 
-    auth      = profile.auth;
     mode      = profile.mode;
     fast_open = profile.fast_open;
     verbose   = profile.verbose;
@@ -1833,7 +1809,7 @@ start_ss_local_server(profile_t profile)
         LOGI("udprelay enabled");
         struct sockaddr *addr = (struct sockaddr *)storage;
         init_udprelay(local_addr, local_port_str, addr,
-                      get_sockaddr_len(addr), mtu, m, auth, timeout, NULL, NULL, NULL);
+                      get_sockaddr_len(addr), mtu, m, timeout, NULL, NULL, NULL);
     }
 
     if (strcmp(local_addr, ":") > 0)
