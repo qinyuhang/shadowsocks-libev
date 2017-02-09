@@ -1,0 +1,813 @@
+Determining if files linux/if.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_aed36" "-configuration" "Debug"
+=== BUILD TARGET cmTC_aed36 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/cmTC_aed36.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'linux/if.h' file not found
+#include <linux/if.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_aed36.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <linux/if.h>
+
+
+int main(void){return 0;}
+
+Determining if files linux/netfilter_ipv4.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_0c419" "-configuration" "Debug"
+=== BUILD TARGET cmTC_0c419 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/cmTC_0c419.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'linux/netfilter_ipv4.h' file not found
+#include <linux/netfilter_ipv4.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_0c419.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <linux/netfilter_ipv4.h>
+
+
+int main(void){return 0;}
+
+Determining if files linux/netfilter_ipv6/ip6_tables.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_09140" "-configuration" "Debug"
+=== BUILD TARGET cmTC_09140 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/cmTC_09140.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'linux/netfilter_ipv6/ip6_tables.h' file not found
+#include <linux/netfilter_ipv6/ip6_tables.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_09140.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <linux/netfilter_ipv6/ip6_tables.h>
+
+
+int main(void){return 0;}
+
+Determining if files pcre/pcre.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_acbb1" "-configuration" "Debug"
+=== BUILD TARGET cmTC_acbb1 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/cmTC_acbb1.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'pcre/pcre.h' file not found
+#include <pcre/pcre.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_acbb1.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <pcre/pcre.h>
+
+
+int main(void){return 0;}
+
+Determining if files port.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_8a313" "-configuration" "Debug"
+=== BUILD TARGET cmTC_8a313 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/cmTC_8a313.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'port.h' file not found
+#include <port.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_8a313.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <port.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/epoll.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_91555" "-configuration" "Debug"
+=== BUILD TARGET cmTC_91555 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/cmTC_91555.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'sys/epoll.h' file not found
+#include <sys/epoll.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_91555.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <sys/epoll.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/eventfd.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_be095" "-configuration" "Debug"
+=== BUILD TARGET cmTC_be095 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/cmTC_be095.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'sys/eventfd.h' file not found
+#include <sys/eventfd.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_be095.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <sys/eventfd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/inotify.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_390f9" "-configuration" "Debug"
+=== BUILD TARGET cmTC_390f9 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/cmTC_390f9.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'sys/inotify.h' file not found
+#include <sys/inotify.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_390f9.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <sys/inotify.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/signalfd.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_82bd9" "-configuration" "Debug"
+=== BUILD TARGET cmTC_82bd9 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/cmTC_82bd9.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'sys/signalfd.h' file not found
+#include <sys/signalfd.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_82bd9.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <sys/signalfd.h>
+
+
+int main(void){return 0;}
+
+Determining if files vfork.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_1e425" "-configuration" "Debug"
+=== BUILD TARGET cmTC_1e425 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/cmTC_1e425.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'vfork.h' file not found
+#include <vfork.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_1e425.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <vfork.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_d347e" "-configuration" "Debug"
+=== BUILD TARGET cmTC_d347e OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/cmTC_d347e.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'windows.h' file not found
+#include <windows.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_d347e.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files winsock2.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_90ff1" "-configuration" "Debug"
+=== BUILD TARGET cmTC_90ff1 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/cmTC_90ff1.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'winsock2.h' file not found
+#include <winsock2.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_90ff1.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <winsock2.h>
+
+
+int main(void){return 0;}
+
+Determining if files ws2tcpip.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_d4ad2" "-configuration" "Debug"
+=== BUILD TARGET cmTC_d4ad2 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/cmTC_d4ad2.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'ws2tcpip.h' file not found
+#include <ws2tcpip.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_d4ad2.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <ws2tcpip.h>
+
+
+int main(void){return 0;}
+
+Determining if files minix/config.h exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_669c5" "-configuration" "Debug"
+=== BUILD TARGET cmTC_669c5 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/cmTC_669c5.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/CheckIncludeFiles.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/CheckIncludeFiles.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/CheckIncludeFiles.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: 'minix/config.h' file not found
+#include <minix/config.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_669c5.build/Objects-normal/x86_64/CheckIncludeFiles.o CheckIncludeFiles.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+Source:
+/* */
+#include <minix/config.h>
+
+
+int main(void){return 0;}
+
+Determining if the function epoll_ctl exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_0b24c" "-configuration" "Debug"
+=== BUILD TARGET cmTC_0b24c OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/cmTC_0b24c.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=epoll_ctl -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_0b24c normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/cmTC_0b24c.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/cmTC_0b24c_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_0b24c.build/Objects-normal/x86_64/cmTC_0b24c_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_0b24c
+Undefined symbols for architecture x86_64:
+  "_epoll_ctl", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_0b24c normal x86_64
+(1 failure)
+
+
+Determining if the function eventfd exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_08b93" "-configuration" "Debug"
+=== BUILD TARGET cmTC_08b93 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/cmTC_08b93.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=eventfd -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_08b93 normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/cmTC_08b93.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/cmTC_08b93_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08b93.build/Objects-normal/x86_64/cmTC_08b93_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_08b93
+Undefined symbols for architecture x86_64:
+  "_eventfd", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_08b93 normal x86_64
+(1 failure)
+
+
+Determining if the function EVP_EncryptInit_ex exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_6a556" "-configuration" "Debug"
+=== BUILD TARGET cmTC_6a556 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/cmTC_6a556.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=EVP_EncryptInit_ex -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_6a556 normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/cmTC_6a556.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/cmTC_6a556_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_6a556.build/Objects-normal/x86_64/cmTC_6a556_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_6a556
+Undefined symbols for architecture x86_64:
+  "_EVP_EncryptInit_ex", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_6a556 normal x86_64
+(1 failure)
+
+
+Determining if the function inotify_init exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_08a6b" "-configuration" "Debug"
+=== BUILD TARGET cmTC_08a6b OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/cmTC_08a6b.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=inotify_init -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_08a6b normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/cmTC_08a6b.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/cmTC_08a6b_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_08a6b.build/Objects-normal/x86_64/cmTC_08a6b_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_08a6b
+Undefined symbols for architecture x86_64:
+  "_inotify_init", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_08a6b normal x86_64
+(1 failure)
+
+
+Determining if the function port_create exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_89c58" "-configuration" "Debug"
+=== BUILD TARGET cmTC_89c58 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/cmTC_89c58.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=port_create -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_89c58 normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/cmTC_89c58.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/cmTC_89c58_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_89c58.build/Objects-normal/x86_64/cmTC_89c58_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_89c58
+Undefined symbols for architecture x86_64:
+  "_port_create", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_89c58 normal x86_64
+(1 failure)
+
+
+Determining if the function RAND_pseudo_bytes exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_78571" "-configuration" "Debug"
+=== BUILD TARGET cmTC_78571 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/cmTC_78571.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=RAND_pseudo_bytes -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_78571 normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/cmTC_78571.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/cmTC_78571_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_78571.build/Objects-normal/x86_64/cmTC_78571_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_78571
+Undefined symbols for architecture x86_64:
+  "_RAND_pseudo_bytes", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_78571 normal x86_64
+(1 failure)
+
+
+Determining if the function setresuid exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_960da" "-configuration" "Debug"
+=== BUILD TARGET cmTC_960da OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/cmTC_960da.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=setresuid -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_960da normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/cmTC_960da.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/cmTC_960da_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_960da.build/Objects-normal/x86_64/cmTC_960da_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_960da
+Undefined symbols for architecture x86_64:
+  "_setresuid", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_960da normal x86_64
+(1 failure)
+
+
+Determining if the function signalfd exists failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_a825f" "-configuration" "Debug"
+=== BUILD TARGET cmTC_a825f OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/cmTC_a825f.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/CheckFunctionExists.o /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -DCHECK_FUNCTION_EXISTS=signalfd -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/CheckFunctionExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/CheckFunctionExists.dia -c /usr/local/Cellar/cmake/3.7.2/share/cmake/Modules/CheckFunctionExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/CheckFunctionExists.o
+
+Ld Debug/cmTC_a825f normal x86_64
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -L/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -filelist /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/cmTC_a825f.LinkFileList -mmacosx-version-min=10.12 -Xlinker -object_path_lto -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/cmTC_a825f_lto.o -Xlinker -no_deduplicate -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_a825f.build/Objects-normal/x86_64/cmTC_a825f_dependency_info.dat -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/cmTC_a825f
+Undefined symbols for architecture x86_64:
+  "_signalfd", referenced from:
+      _main in CheckFunctionExists.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	Ld Debug/cmTC_a825f normal x86_64
+(1 failure)
+
+
+Determining if the WSAEWOULDBLOCK exist failed with the following output:
+Change Dir: /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/xcodebuild" "-project" "CMAKE_TRY_COMPILE.xcodeproj" "build" "-target" "cmTC_33f21" "-configuration" "Debug"
+=== BUILD TARGET cmTC_33f21 OF PROJECT CMAKE_TRY_COMPILE WITH CONFIGURATION Debug ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64
+write-file /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/cmTC_33f21.LinkFileList
+
+CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/CheckSymbolExists.o CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.12 -g -Wno-sign-conversion -Wno-infinite-recursion -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug/include -I/usr/local/include -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/DerivedSources/x86_64 -I/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/Debug -MMD -MT dependencies -MF /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/CheckSymbolExists.d --serialize-diagnostics /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/CheckSymbolExists.dia -c /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckSymbolExists.c -o /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/CheckSymbolExists.o
+/Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'winerror.h' file not found
+#include <winerror.h>
+         ^
+1 error generated.
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileC CMAKE_TRY_COMPILE.build/Debug/cmTC_33f21.build/Objects-normal/x86_64/CheckSymbolExists.o CheckSymbolExists.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+(1 failure)
+
+File /Users/qinyuhang/GitHub/shadowsocks-libev/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <winerror.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef WSAEWOULDBLOCK
+  return ((int*)(&WSAEWOULDBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

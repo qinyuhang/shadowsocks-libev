@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		62589149B6A244A1AFF2134B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B044C772F684D319376DDA8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F5BE833D4EFB4C508F1CA3DF /* CMake Rules */,
+			);
+			dependencies = (
+				6EBB78741AC64B738D47E3DF /* PBXTargetDependency */,
+				6F8316DB639E4471A62B9E10 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D94FEB540690434D8A185A56 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EC29B7C82EB142CC9DE0D126 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4421A7044D7D4430ABE9F36C /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1C7222D87CC3446A8DE70895 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E4E272320652412099220ABE /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */; };
+		9D73EBBF5A5940C9809969CD /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/event.c */ = {isa = PBXBuildFile; fileRef = 7BF1B0C911464946A46B1728 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/event.c */; };
+		F6CC1357F47A46D68F5CB2B9 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/ev.c */ = {isa = PBXBuildFile; fileRef = E0DEA94EF2D244189FF9C4DA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/ev.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0207E7838F5C4A4DBDCB96C7 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		404756FA5C62401C9EB4E0B3 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		5D11047C5AF940869A13F66B /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E399CB208E694E33BC7FEA51 = {
+			isa = PBXBuildStyle;
+		};
+		F7D642CB2A6B465F8980B7AE /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		275EA796AB194669BCDF8EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B71122ED9D4D44BB187FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94FEB540690434D8A185A56;
+			remoteInfo = ZERO_CHECK;
+		};
+		5ACB38DD7FD54C658DDEB478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B71122ED9D4D44BB187FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94FEB540690434D8A185A56;
+			remoteInfo = ZERO_CHECK;
+		};
+		BC28AD2B9E4441A7A966A8DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49B71122ED9D4D44BB187FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C902CA5FF94F159DE3AABB;
+			remoteInfo = ev;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AF3FE9946154B3AA5E89238 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7BF1B0C911464946A46B1728 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/event.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = event.c; path = event.c; sourceTree = SOURCE_ROOT; };
+		E0DEA94EF2D244189FF9C4DA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/ev.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ev.c; path = ev.c; sourceTree = SOURCE_ROOT; };
+		E4E272320652412099220ABE /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F307D894DE1D4AA6930D51C1 /* ev */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libev.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC10BEE9464EE7925A002C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0005F6BCF3AE4AA78567B69F /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				107F5F8EA382434391411018 /* CMake Rules */,
+				FECC10BEE9464EE7925A002C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		107F5F8EA382434391411018 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1D427D8B4B6D473F8D965E02 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		23713652A1714E3E9FB436E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2D9A10A2A214488FB61F9C73 /* ev */ = {
+			isa = PBXGroup;
+			children = (
+				ED2300B9A1BB406FAE6410F5 /* Source Files */,
+				E4E272320652412099220ABE /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */,
+			);
+			name = ev;
+			sourceTree = "<group>";
+		};
+		4E3160DDCBA846C9B43E2B09 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D9A10A2A214488FB61F9C73 /* ev */,
+				79365224851846B6A23F45FC /* ALL_BUILD */,
+				0005F6BCF3AE4AA78567B69F /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		6E86B34541C446449E14E7D1 = {
+			isa = PBXGroup;
+			children = (
+				4E3160DDCBA846C9B43E2B09 /* Sources */,
+				23713652A1714E3E9FB436E4 /* Resources */,
+				74B88F2203C3402885343EA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74B88F2203C3402885343EA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F307D894DE1D4AA6930D51C1 /* ev */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79365224851846B6A23F45FC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1D427D8B4B6D473F8D965E02 /* CMake Rules */,
+				0AF3FE9946154B3AA5E89238 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		ED2300B9A1BB406FAE6410F5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEA94EF2D244189FF9C4DA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/ev.c */,
+				7BF1B0C911464946A46B1728 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/event.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41C902CA5FF94F159DE3AABB /* ev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441BA77AD38B482799ADDF88 /* Build configuration list for PBXNativeTarget "ev" */;
+			buildPhases = (
+				91DD7AE37B6E4B6888B98C36 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				123C2DEB92A349D1AAC00041 /* PBXTargetDependency */,
+			);
+			name = ev;
+			productName = ev;
+			productReference = F307D894DE1D4AA6930D51C1 /* ev */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B71122ED9D4D44BB187FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = E2CFBEC69C4B44C68FDE9FF8 /* Build configuration list for PBXProject "libev" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				5D11047C5AF940869A13F66B /* Debug */,
+				F7D642CB2A6B465F8980B7AE /* Release */,
+				0207E7838F5C4A4DBDCB96C7 /* MinSizeRel */,
+				404756FA5C62401C9EB4E0B3 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 6E86B34541C446449E14E7D1;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				62589149B6A244A1AFF2134B /* ALL_BUILD */,
+				D94FEB540690434D8A185A56 /* ZERO_CHECK */,
+				41C902CA5FF94F159DE3AABB /* ev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4421A7044D7D4430ABE9F36C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/qinyuhang/GitHub/shadowsocks-libev/libev -f /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		84DE165BB3444E6B96353853 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B9512EAB6BF64F32AD19A6C7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F5BE833D4EFB4C508F1CA3DF /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/qinyuhang/GitHub/shadowsocks-libev/libev -f /Users/qinyuhang/GitHub/shadowsocks-libev/libev/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91DD7AE37B6E4B6888B98C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6CC1357F47A46D68F5CB2B9 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/ev.c */,
+				9D73EBBF5A5940C9809969CD /* /Users/qinyuhang/GitHub/shadowsocks-libev/libev/event.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		123C2DEB92A349D1AAC00041 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D94FEB540690434D8A185A56 /* ZERO_CHECK */;
+			targetProxy = 5ACB38DD7FD54C658DDEB478 /* PBXContainerItemProxy */;
+		};
+		6EBB78741AC64B738D47E3DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D94FEB540690434D8A185A56 /* ZERO_CHECK */;
+			targetProxy = 275EA796AB194669BCDF8EDE /* PBXContainerItemProxy */;
+		};
+		6F8316DB639E4471A62B9E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41C902CA5FF94F159DE3AABB /* ev */;
+			targetProxy = BC28AD2B9E4441A7A966A8DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11F87A43740B416A81CFFB28 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2A6C2223F45C4712AE416908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev/build";
+			};
+			name = Release;
+		};
+		3FB273957F104DC7B0819B48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		46BC4D4B459D4E83BFC6E33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev/build";
+			};
+			name = Debug;
+		};
+		6602EBBDCD7B4E58881B8D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6C95485D6A1F436AACC10694 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev/build";
+			};
+			name = MinSizeRel;
+		};
+		7742499EC1914AA3B9AC24D9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7C0B70FBEC6D4212B7EC4478 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		881C64E023C349459C8FB5CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A2688FC89CDC44FD816F37F7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ev;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A779CD64160A49C7A2C03A79 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ev;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B3CCF7CCBA994B27947D73CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C54F14B78AAD492EBEA57CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ev;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E2BC4CA4388149ACAA9D2ECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ev;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F3E7225798B44E9A85DF78F1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F785BDF871AC4E2BA747D994 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libev/build";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		441BA77AD38B482799ADDF88 /* Build configuration list for PBXNativeTarget "ev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BC4CA4388149ACAA9D2ECC /* Debug */,
+				C54F14B78AAD492EBEA57CA1 /* Release */,
+				A2688FC89CDC44FD816F37F7 /* MinSizeRel */,
+				A779CD64160A49C7A2C03A79 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4B044C772F684D319376DDA8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3CCF7CCBA994B27947D73CD /* Debug */,
+				3FB273957F104DC7B0819B48 /* Release */,
+				11F87A43740B416A81CFFB28 /* MinSizeRel */,
+				F3E7225798B44E9A85DF78F1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E2CFBEC69C4B44C68FDE9FF8 /* Build configuration list for PBXProject "libev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BC4D4B459D4E83BFC6E33F /* Debug */,
+				2A6C2223F45C4712AE416908 /* Release */,
+				6C95485D6A1F436AACC10694 /* MinSizeRel */,
+				F785BDF871AC4E2BA747D994 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC29B7C82EB142CC9DE0D126 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				881C64E023C349459C8FB5CF /* Debug */,
+				6602EBBDCD7B4E58881B8D67 /* Release */,
+				7742499EC1914AA3B9AC24D9 /* MinSizeRel */,
+				7C0B70FBEC6D4212B7EC4478 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B71122ED9D4D44BB187FB9 /* Project object */;
+}

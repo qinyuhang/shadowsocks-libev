@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		62589149B6A244A1AFF2134B /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C4703ADB3A14D8CBC96D575 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F220A79F59964578A87E43A3 /* CMake Rules */,
+			);
+			dependencies = (
+				33997C7D7F6B413CBB6D4916 /* PBXTargetDependency */,
+				D244F60DD8C6460682E4BE4F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D94FEB540690434D8A185A56 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D3786A01923D4649B5213142 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				243FA5D65F35499D92F331EA /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1644E40AC87E44B18FF4C5C5 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/bitset.c */ = {isa = PBXBuildFile; fileRef = 0A19D4F8603F4E269A710AAA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/bitset.c */; };
+		20F1E6CD99A04A74A7D74476 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/hash-table.c */ = {isa = PBXBuildFile; fileRef = 6CCFA5ADB4044B00A1950DE4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/hash-table.c */; };
+		438D664EAA8742EA95216F24 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/buffer.c */ = {isa = PBXBuildFile; fileRef = AE02D44DA82645C0A57232B1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/buffer.c */; };
+		4B15C3F880C44F5F842BB4B9 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/file-stream.c */ = {isa = PBXBuildFile; fileRef = BD9698C9B7314F5A9C263FA0 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/file-stream.c */; };
+		4C896B660D724CA4856E0D99 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/gc.c */ = {isa = PBXBuildFile; fileRef = D571F508FEA8411E9DF6293E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/gc.c */; };
+		50E0FF482E594C78965220A8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/array.c */ = {isa = PBXBuildFile; fileRef = 8EDB892C848C4339AD0207CF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/array.c */; };
+		625831BE6D6246698059933D /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/hash.c */ = {isa = PBXBuildFile; fileRef = 727DB70E5DC94B1B9620B667 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/hash.c */; };
+		64748AFCCBFD40ECB494F243 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DB07B33516504861B20A949B /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */; };
+		892D0768ABA9497880F67BD8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/dllist.c */ = {isa = PBXBuildFile; fileRef = 585A7D2898F84D9CA66E5DB4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/dllist.c */; };
+		8A70EB5582724EC4ACA27A3C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/timestamp.c */ = {isa = PBXBuildFile; fileRef = D6C0CB10C10F437683030031 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/timestamp.c */; };
+		ADAEA80659E1416597951223 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/mempool.c */ = {isa = PBXBuildFile; fileRef = F12139E869104ED5A4E57DC8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/mempool.c */; };
+		B85EC984AAF641CB82E60A0B /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/u128.c */ = {isa = PBXBuildFile; fileRef = E060B2197EB24A58BDDA0AA6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/u128.c */; };
+		BC6D1508C1894B29A7224102 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/slice.c */ = {isa = PBXBuildFile; fileRef = 0E93E71BD2374A50842FBDCF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/slice.c */; };
+		C57BFF20D2C144419E074068 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/version.c */ = {isa = PBXBuildFile; fileRef = 45270A1C379242A0A965AC0D /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/version.c */; };
+		CD77CFACF1E94F7D8FC4BA0C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/pthreads/thread.c */ = {isa = PBXBuildFile; fileRef = E51AF2F476BC4BA59669BEE1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/pthreads/thread.c */; };
+		D6DD0E1681A641BAA4FEA357 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/ip-address.c */ = {isa = PBXBuildFile; fileRef = B1A54D0B83DF4CBF8196AC23 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/ip-address.c */; };
+		DBFBEBA9499E4701B6B213FB /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/managed-buffer.c */ = {isa = PBXBuildFile; fileRef = 653123F210AF4AF2931427C6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/managed-buffer.c */; };
+		DD68D0FB42C14D73A1F3C8C5 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/allocator.c */ = {isa = PBXBuildFile; fileRef = 48B35A1AEE0A444BB7D49680 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/allocator.c */; };
+		E209D002F0F6462C8ACF7074 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/cli/commands.c */ = {isa = PBXBuildFile; fileRef = 83A3FF3D3C394A57B312070E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/cli/commands.c */; };
+		EC11A053916740D593F940D3 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/posix/process.c */ = {isa = PBXBuildFile; fileRef = 5339E16E6DBC47A79DCADBBF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/posix/process.c */; };
+		F72F0301D8634FA9A544C406 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/ring-buffer.c */ = {isa = PBXBuildFile; fileRef = 808CEFD8832149BABC1C4212 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/ring-buffer.c */; };
+		FFF72BDB8064483E893B6ECD /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/error.c */ = {isa = PBXBuildFile; fileRef = 926BC50566984A588B7790E6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/error.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1501966D85BF48C08B17A4D5 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		27E11C193F3B4133A664F6C7 = {
+			isa = PBXBuildStyle;
+		};
+		7CA7852F34614B5487A04706 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9449A0031E2440AB83DAA30C /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		A058467D1B27430A8D4A6010 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		09C9F4FB6DF341ACA9149723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4057704107C4E82BE3E58BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94FEB540690434D8A185A56;
+			remoteInfo = ZERO_CHECK;
+		};
+		AE1BC326C261401487E3FA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4057704107C4E82BE3E58BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5786968874B9455BAA2E0C8A;
+			remoteInfo = libcork;
+		};
+		D54FFFFE96864B86B6E61426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4057704107C4E82BE3E58BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D94FEB540690434D8A185A56;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A19D4F8603F4E269A710AAA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/bitset.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = bitset.c; path = ds/bitset.c; sourceTree = SOURCE_ROOT; };
+		0E93E71BD2374A50842FBDCF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/slice.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = slice.c; path = ds/slice.c; sourceTree = SOURCE_ROOT; };
+		45270A1C379242A0A965AC0D /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = version.c; path = core/version.c; sourceTree = SOURCE_ROOT; };
+		47CA60031FDA4CF8A863762A /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		48B35A1AEE0A444BB7D49680 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/allocator.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = allocator.c; path = core/allocator.c; sourceTree = SOURCE_ROOT; };
+		5339E16E6DBC47A79DCADBBF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/posix/process.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = process.c; path = posix/process.c; sourceTree = SOURCE_ROOT; };
+		585A7D2898F84D9CA66E5DB4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/dllist.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = dllist.c; path = ds/dllist.c; sourceTree = SOURCE_ROOT; };
+		653123F210AF4AF2931427C6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/managed-buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "managed-buffer.c"; path = "ds/managed-buffer.c"; sourceTree = SOURCE_ROOT; };
+		6CCFA5ADB4044B00A1950DE4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/hash-table.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "hash-table.c"; path = "ds/hash-table.c"; sourceTree = SOURCE_ROOT; };
+		727DB70E5DC94B1B9620B667 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/hash.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = hash.c; path = core/hash.c; sourceTree = SOURCE_ROOT; };
+		7BA1309B4C9447F4BD93CECF /* libcork */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		808CEFD8832149BABC1C4212 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/ring-buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "ring-buffer.c"; path = "ds/ring-buffer.c"; sourceTree = SOURCE_ROOT; };
+		83A3FF3D3C394A57B312070E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/cli/commands.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = commands.c; path = cli/commands.c; sourceTree = SOURCE_ROOT; };
+		8EDB892C848C4339AD0207CF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/array.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = array.c; path = ds/array.c; sourceTree = SOURCE_ROOT; };
+		926BC50566984A588B7790E6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/error.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = error.c; path = core/error.c; sourceTree = SOURCE_ROOT; };
+		AE02D44DA82645C0A57232B1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/buffer.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = buffer.c; path = ds/buffer.c; sourceTree = SOURCE_ROOT; };
+		B1A54D0B83DF4CBF8196AC23 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/ip-address.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "ip-address.c"; path = "core/ip-address.c"; sourceTree = SOURCE_ROOT; };
+		BD9698C9B7314F5A9C263FA0 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/file-stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "file-stream.c"; path = "ds/file-stream.c"; sourceTree = SOURCE_ROOT; };
+		D571F508FEA8411E9DF6293E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/gc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = gc.c; path = core/gc.c; sourceTree = SOURCE_ROOT; };
+		D6C0CB10C10F437683030031 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/timestamp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = timestamp.c; path = core/timestamp.c; sourceTree = SOURCE_ROOT; };
+		D8AC620AEED0433F88D1C160 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DB07B33516504861B20A949B /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E060B2197EB24A58BDDA0AA6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/u128.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = u128.c; path = core/u128.c; sourceTree = SOURCE_ROOT; };
+		E51AF2F476BC4BA59669BEE1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/pthreads/thread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = thread.c; path = pthreads/thread.c; sourceTree = SOURCE_ROOT; };
+		F12139E869104ED5A4E57DC8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/mempool.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mempool.c; path = core/mempool.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0B942C956F654518A9139ADB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11C61009D52F4BBAB8B99089 /* libcork */,
+				55AB84383BB445CE8529C2B8 /* ALL_BUILD */,
+				8B03349B975F4C8489822838 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		0F756812A5BF4EA7860648A0 = {
+			isa = PBXGroup;
+			children = (
+				0B942C956F654518A9139ADB /* Sources */,
+				F9A1E200A6DB43348FB872D3 /* Resources */,
+				1D105EDB6B3F458C92AF3530 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11C61009D52F4BBAB8B99089 /* libcork */ = {
+			isa = PBXGroup;
+			children = (
+				96F6449289FE42C0A813C6DA /* Source Files */,
+				DB07B33516504861B20A949B /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */,
+			);
+			name = libcork;
+			sourceTree = "<group>";
+		};
+		1D105EDB6B3F458C92AF3530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BA1309B4C9447F4BD93CECF /* libcork */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E95A8FDEC5E4D82893F28BF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		55AB84383BB445CE8529C2B8 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CCBCFCEFB3E841508041ACF1 /* CMake Rules */,
+				47CA60031FDA4CF8A863762A /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8B03349B975F4C8489822838 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				4E95A8FDEC5E4D82893F28BF /* CMake Rules */,
+				D8AC620AEED0433F88D1C160 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		96F6449289FE42C0A813C6DA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A3FF3D3C394A57B312070E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/cli/commands.c */,
+				48B35A1AEE0A444BB7D49680 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/allocator.c */,
+				926BC50566984A588B7790E6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/error.c */,
+				D571F508FEA8411E9DF6293E /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/gc.c */,
+				727DB70E5DC94B1B9620B667 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/hash.c */,
+				B1A54D0B83DF4CBF8196AC23 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/ip-address.c */,
+				F12139E869104ED5A4E57DC8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/mempool.c */,
+				D6C0CB10C10F437683030031 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/timestamp.c */,
+				E060B2197EB24A58BDDA0AA6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/u128.c */,
+				45270A1C379242A0A965AC0D /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/version.c */,
+				8EDB892C848C4339AD0207CF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/array.c */,
+				0A19D4F8603F4E269A710AAA /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/bitset.c */,
+				AE02D44DA82645C0A57232B1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/buffer.c */,
+				585A7D2898F84D9CA66E5DB4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/dllist.c */,
+				BD9698C9B7314F5A9C263FA0 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/file-stream.c */,
+				6CCFA5ADB4044B00A1950DE4 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/hash-table.c */,
+				653123F210AF4AF2931427C6 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/managed-buffer.c */,
+				808CEFD8832149BABC1C4212 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/ring-buffer.c */,
+				0E93E71BD2374A50842FBDCF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/slice.c */,
+				5339E16E6DBC47A79DCADBBF /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/posix/process.c */,
+				E51AF2F476BC4BA59669BEE1 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/pthreads/thread.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CCBCFCEFB3E841508041ACF1 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F9A1E200A6DB43348FB872D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5786968874B9455BAA2E0C8A /* libcork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80063358CE474A61B2268D37 /* Build configuration list for PBXNativeTarget "libcork" */;
+			buildPhases = (
+				C68210F54EFF411090810865 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FACD3BAF964DDFAB8BB6BF /* PBXTargetDependency */,
+			);
+			name = libcork;
+			productName = libcork;
+			productReference = 7BA1309B4C9447F4BD93CECF /* libcork */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4057704107C4E82BE3E58BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 12D887A52F2D4B18BA0C6AE5 /* Build configuration list for PBXProject "libcork" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				1501966D85BF48C08B17A4D5 /* Debug */,
+				7CA7852F34614B5487A04706 /* Release */,
+				A058467D1B27430A8D4A6010 /* MinSizeRel */,
+				9449A0031E2440AB83DAA30C /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 0F756812A5BF4EA7860648A0;
+			projectDirPath = .;
+			projectRoot = "";
+			targets = (
+				62589149B6A244A1AFF2134B /* ALL_BUILD */,
+				D94FEB540690434D8A185A56 /* ZERO_CHECK */,
+				5786968874B9455BAA2E0C8A /* libcork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DAF43CAB13F4F72978CEA89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		243FA5D65F35499D92F331EA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/qinyuhang/GitHub/shadowsocks-libev/libcork -f /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3E41E12120934D0AAA4FFF2F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F220A79F59964578A87E43A3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/qinyuhang/GitHub/shadowsocks-libev/libcork -f /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C68210F54EFF411090810865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E209D002F0F6462C8ACF7074 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/cli/commands.c */,
+				DD68D0FB42C14D73A1F3C8C5 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/allocator.c */,
+				FFF72BDB8064483E893B6ECD /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/error.c */,
+				4C896B660D724CA4856E0D99 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/gc.c */,
+				625831BE6D6246698059933D /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/hash.c */,
+				D6DD0E1681A641BAA4FEA357 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/ip-address.c */,
+				ADAEA80659E1416597951223 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/mempool.c */,
+				8A70EB5582724EC4ACA27A3C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/timestamp.c */,
+				B85EC984AAF641CB82E60A0B /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/u128.c */,
+				C57BFF20D2C144419E074068 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/core/version.c */,
+				50E0FF482E594C78965220A8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/array.c */,
+				1644E40AC87E44B18FF4C5C5 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/bitset.c */,
+				438D664EAA8742EA95216F24 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/buffer.c */,
+				892D0768ABA9497880F67BD8 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/dllist.c */,
+				4B15C3F880C44F5F842BB4B9 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/file-stream.c */,
+				20F1E6CD99A04A74A7D74476 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/hash-table.c */,
+				DBFBEBA9499E4701B6B213FB /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/managed-buffer.c */,
+				F72F0301D8634FA9A544C406 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/ring-buffer.c */,
+				BC6D1508C1894B29A7224102 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/ds/slice.c */,
+				EC11A053916740D593F940D3 /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/posix/process.c */,
+				CD77CFACF1E94F7D8FC4BA0C /* /Users/qinyuhang/GitHub/shadowsocks-libev/libcork/pthreads/thread.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33997C7D7F6B413CBB6D4916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5786968874B9455BAA2E0C8A /* libcork */;
+			targetProxy = AE1BC326C261401487E3FA23 /* PBXContainerItemProxy */;
+		};
+		72FACD3BAF964DDFAB8BB6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D94FEB540690434D8A185A56 /* ZERO_CHECK */;
+			targetProxy = 09C9F4FB6DF341ACA9149723 /* PBXContainerItemProxy */;
+		};
+		D244F60DD8C6460682E4BE4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D94FEB540690434D8A185A56 /* ZERO_CHECK */;
+			targetProxy = D54FFFFE96864B86B6E61426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		102A4594AC3C48B6BE75183A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1393DCB1715049F8BBA12D68 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/build";
+			};
+			name = RelWithDebInfo;
+		};
+		194C4E16B08148049F2BB4F6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		204EA9B3CE814156B8B7D19A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		29807B7CF6D441C9A56BB945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CORK_API=CORK_LOCAL'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include","/Users/qinyuhang/GitHub/shadowsocks-libev/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "     -Wall -Werror";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3AA10809877A47B8998F08E5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		69D0C11CA42B4D0780F28E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/build";
+			};
+			name = Release;
+		};
+		8691EFB3FCF440FF9573FB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CORK_API=CORK_LOCAL'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include","/Users/qinyuhang/GitHub/shadowsocks-libev/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG   -Wall -Werror";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8D70AD3A56D74D58858D9151 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/build";
+			};
+			name = MinSizeRel;
+		};
+		90C433C5B095422FA9627F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		94EA551352DE4C77B824A859 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CORK_API=CORK_LOCAL'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include","/Users/qinyuhang/GitHub/shadowsocks-libev/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG   -Wall -Werror";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A79BDD4AF558445583F68719 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B0B4AE31EB7E474CA215E1EC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'CORK_API=CORK_LOCAL'",HAVE_CONFIG_H,"'__USE_MINGW_ANSI_STDIO=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include","/Users/qinyuhang/GitHub/shadowsocks-libev/include");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG   -Wall -Werror";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cork;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BAE16FFCD7E94679A2A6D03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/build";
+			};
+			name = Debug;
+		};
+		D262BD76C332479A894FC371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F03565E1DBC04282B8E4AAEC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/usr/local/include,"/Users/qinyuhang/GitHub/shadowsocks-libev/libcork/include");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/qinyuhang/GitHub/shadowsocks-libev/libcork";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D887A52F2D4B18BA0C6AE5 /* Build configuration list for PBXProject "libcork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE16FFCD7E94679A2A6D03A /* Debug */,
+				69D0C11CA42B4D0780F28E58 /* Release */,
+				8D70AD3A56D74D58858D9151 /* MinSizeRel */,
+				1393DCB1715049F8BBA12D68 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80063358CE474A61B2268D37 /* Build configuration list for PBXNativeTarget "libcork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29807B7CF6D441C9A56BB945 /* Debug */,
+				8691EFB3FCF440FF9573FB64 /* Release */,
+				B0B4AE31EB7E474CA215E1EC /* MinSizeRel */,
+				94EA551352DE4C77B824A859 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C4703ADB3A14D8CBC96D575 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102A4594AC3C48B6BE75183A /* Debug */,
+				204EA9B3CE814156B8B7D19A /* Release */,
+				3AA10809877A47B8998F08E5 /* MinSizeRel */,
+				194C4E16B08148049F2BB4F6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3786A01923D4649B5213142 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C433C5B095422FA9627F54 /* Debug */,
+				D262BD76C332479A894FC371 /* Release */,
+				F03565E1DBC04282B8E4AAEC /* MinSizeRel */,
+				A79BDD4AF558445583F68719 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4057704107C4E82BE3E58BF /* Project object */;
+}
