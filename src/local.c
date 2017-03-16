@@ -111,7 +111,7 @@ ev_tstamp last = 0;
 int should_traffic_log = 0;
 #endif
 
-#include "obfs.c" // I don't want to modify makefile
+#include "includeobfs.h" // I don't want to modify makefile
 
 static int acl       = 0;
 static int mode = TCP_ONLY;
