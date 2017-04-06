@@ -28,6 +28,7 @@ typedef struct auth_simple_local_data {
     hmac_with_key_func hmac;
     hash_func hash;
     int hash_len;
+    int last_data_len;
 }auth_simple_local_data;
 
 void auth_simple_local_data_init(auth_simple_local_data* local) {
@@ -649,9 +650,20 @@ int auth_sha1_v4_client_post_decrypt(obfs *self, char **pplaindata, int dataleng
     return len;
 }
 
+unsigned int get_rand_len(int datalength, int fulldatalength, auth_simple_local_data *local, server_info *server) {
+    if (datalength > 1300 || local->last_data_len > 1300 || fulldatalength >= (int)server->buffer_size)
+        return 0;
+    if (datalength > 1100)
+        return xorshift128plus() & 0x7F;
+    if (datalength > 900)
+        return xorshift128plus() & 0xFF;
+    if (datalength > 400)
+        return xorshift128plus() & 0x1FF;
+    return xorshift128plus() & 0x3FF;
+}
 
-int auth_aes128_sha1_pack_data(char *data, int datalength, char *outdata, auth_simple_local_data *local, server_info *server) {
-    unsigned int rand_len = (datalength > 1200 ? 0 : local->pack_id > 4 ? (xorshift128plus() & 0x20) : datalength > 900 ? (xorshift128plus() & 0x80) : (xorshift128plus() & 0x200)) + 1;
+int auth_aes128_sha1_pack_data(char *data, int datalength, int fulldatalength, char *outdata, auth_simple_local_data *local, server_info *server) {
+    unsigned int rand_len = get_rand_len(datalength, fulldatalength, local, server) + 1;
     int out_size = (int)rand_len + datalength + 8;
     memcpy(outdata + rand_len + 4, data, datalength);
     outdata[0] = (char)out_size;
@@ -696,7 +708,7 @@ int auth_aes128_sha1_pack_data(char *data, int datalength, char *outdata, auth_s
 }
 
 int auth_aes128_sha1_pack_auth_data(auth_simple_global_data *global, server_info *server, auth_simple_local_data *local, char *data, int datalength, char *outdata) {
-    unsigned int rand_len = (datalength > 400 ? (xorshift128plus() & 0x200) : (xorshift128plus() & 0x400));
+    unsigned int rand_len = (datalength > 400 ? (xorshift128plus() & 0x1FF) : (xorshift128plus() & 0x3FF));
     int data_offset = (int)rand_len + 16 + 4 + 4 + 7;
     int out_size = data_offset + datalength + 4;
     const char* salt = local->salt;
@@ -731,7 +743,6 @@ int auth_aes128_sha1_pack_auth_data(auth_simple_global_data *global, server_info
     encrypt[15] = (char)(rand_len >> 8);
 
     {
-
         if (local->user_key == NULL) {
             if(server->param != NULL && server->param[0] != 0) {
                 char *param = server->param;
@@ -825,13 +836,13 @@ int auth_aes128_sha1_client_pre_encrypt(obfs *self, char **pplaindata, int datal
         local->has_sent_header = 1;
     }
     while ( len > auth_simple_pack_unit_size ) {
-        pack_len = auth_aes128_sha1_pack_data(data, auth_simple_pack_unit_size, buffer, local, &self->server);
+        pack_len = auth_aes128_sha1_pack_data(data, auth_simple_pack_unit_size, datalength, buffer, local, &self->server);
         buffer += pack_len;
         data += auth_simple_pack_unit_size;
         len -= auth_simple_pack_unit_size;
     }
     if (len > 0) {
-        pack_len = auth_aes128_sha1_pack_data(data, len, buffer, local, &self->server);
+        pack_len = auth_aes128_sha1_pack_data(data, len, datalength, buffer, local, &self->server);
         buffer += pack_len;
     }
     len = (int)(buffer - out_buffer);
@@ -839,6 +850,7 @@ int auth_aes128_sha1_client_pre_encrypt(obfs *self, char **pplaindata, int datal
         *pplaindata = (char*)realloc(*pplaindata, *capacity = (size_t)(len * 2));
         plaindata = *pplaindata;
     }
+    local->last_data_len = datalength;
     memmove(plaindata, out_buffer, len);
     free(out_buffer);
     return len;

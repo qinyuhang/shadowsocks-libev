@@ -32,6 +32,11 @@
 #define MODULE_LOCAL
 #endif
 
+#include <libcork/ds.h>
+
+#include "encrypt.h"
+#include "obfs/obfs.h"
+
 int init_udprelay(const char *server_host, const char *server_port,
 #ifdef MODULE_LOCAL
                   const struct sockaddr *remote_addr, const int remote_addr_len,
@@ -39,9 +44,43 @@ int init_udprelay(const char *server_host, const char *server_port,
                   const ss_addr_t tunnel_addr,
 #endif
 #endif
-                  int mtu, int method, int timeout, const char *iface, const char *protocol, const char *protocol_param);
+                  int mtu, int timeout, const char *iface,
+                  cipher_env_t* cipher_env, const char *protocol, const char *protocol_param);
 
 void free_udprelay(void);
+
+typedef struct server_def {
+    char *host;
+    int port;
+    int udp_port;
+    struct sockaddr_storage *addr; // resolved address
+    struct sockaddr_storage *addr_udp; // resolved address
+    int addr_len;
+    int addr_udp_len;
+
+    char *psw; // raw password
+    cipher_env_t cipher;
+
+    struct cork_dllist connections;
+
+    // SSR
+    char *protocol_name; // for logging use only?
+    char *obfs_name; // for logging use only?
+
+    char *protocol_param;
+    char *obfs_param;
+
+    obfs_class *protocol_plugin;
+    obfs_class *obfs_plugin;
+
+    void *protocol_global;
+    void *obfs_global;
+
+    int enable;
+    char *id;
+    char *group;
+    int udp_over_tcp;
+} server_def_t;
 
 #ifdef ANDROID
 int protect_socket(int fd);
