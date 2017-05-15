@@ -52,8 +52,8 @@
 #include "tls.h"
 #include "netutils.h"
 #include "utils.h"
-#include "common.h"
 #include "redir.h"
+#include "common.h"
 
 #ifndef EAGAIN
 #define EAGAIN EWOULDBLOCK
@@ -992,7 +992,7 @@ accept_cb(EV_P_ ev_io *w, int revents)
     _server_info.iv_len = enc_get_iv_len(&server_env->cipher);
     _server_info.key = enc_get_key(&server_env->cipher);
     _server_info.key_len = enc_get_key_len(&server_env->cipher);
-    _server_info.tcp_mss = 1448;
+    _server_info.tcp_mss = 1452;
     _server_info.buffer_size = BUF_SIZE;
     _server_info.cipher_env = &server_env->cipher;
 
@@ -1006,6 +1006,8 @@ accept_cb(EV_P_ ev_io *w, int revents)
 
     if (server_env->protocol_plugin) {
         server->protocol = server_env->protocol_plugin->new_obfs();
+        _server_info.overhead = server_env->protocol_plugin->get_overhead(server->protocol)
+            + (server_env->obfs_plugin ? server_env->obfs_plugin->get_overhead(server->obfs) : 0);
         server_env->protocol_plugin->set_server_info(server->protocol, &_server_info);
     }
     // SSR end
@@ -1077,6 +1079,8 @@ main(int argc, char **argv)
     int remote_num = 0;
     ss_addr_t remote_addr[MAX_REMOTE_NUM];
     char *remote_port = NULL;
+
+    ss_addr_t tunnel_addr = { .host = NULL, .port = NULL };
 
     int option_index                    = 0;
     static struct option long_options[] = {
@@ -1445,7 +1449,7 @@ main(int argc, char **argv)
     if (mode != TCP_ONLY) {
         LOGI("UDP relay enabled");
         init_udprelay(local_addr, local_port, (struct sockaddr*)listen_ctx->servers[0].addr_udp,
-                      listen_ctx->servers[0].addr_udp_len, mtu, listen_ctx->timeout, NULL, &listen_ctx->servers[0].cipher, listen_ctx->servers[0].protocol_name, listen_ctx->servers[0].protocol_param);
+                      listen_ctx->servers[0].addr_udp_len, tunnel_addr, mtu, listen_ctx->timeout, NULL, &listen_ctx->servers[0].cipher, listen_ctx->servers[0].protocol_name, listen_ctx->servers[0].protocol_param);
     }
 
     if (mode == UDP_ONLY) {
