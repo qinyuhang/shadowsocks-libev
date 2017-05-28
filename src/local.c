@@ -94,7 +94,7 @@ int verbose = 0;
 int keep_resolving = 1;
 
 #ifdef ANDROID
-int log_tx_rx  = 1;
+int log_tx_rx  = 0;
 int vpn        = 0;
 uint64_t tx    = 0;
 uint64_t rx    = 0;
@@ -860,7 +860,8 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
                 if (server_env->protocol_plugin) {
                     server->protocol = server_env->protocol_plugin->new_obfs();
                     _server_info.overhead = server_env->protocol_plugin->get_overhead(server->protocol)
-                        + (server_env->obfs_plugin ? server_env->obfs_plugin->get_overhead(server->obfs) : 0);
+                        + (server_env->obfs_plugin ? server_env->obfs_plugin->get_overhead(server->obfs) : 0)
+                        + _server_info.iv_len;
                     server_env->protocol_plugin->set_server_info(server->protocol, &_server_info);
                 }
                 // SSR end
@@ -1509,7 +1510,7 @@ main(int argc, char **argv)
     USE_TTY();
 
 #ifdef ANDROID
-    while ((c = getopt_long(argc, argv, "f:s:p:l:k:t:m:i:c:b:L:a:n:P:huUvVA6"
+    while ((c = getopt_long(argc, argv, "f:s:p:l:k:t:m:i:c:b:L:a:n:P:xhuUvVA6"
                             "O:o:G:g:",
                             long_options, &option_index)) != -1)
 #else
@@ -1619,6 +1620,9 @@ main(int argc, char **argv)
             break;
         case 'P':
             prefix = optarg;
+            break;
+        case 'x':
+            log_tx_rx = 1;
             break;
 #endif
             case '?':
@@ -1774,10 +1778,6 @@ main(int argc, char **argv)
     // parse tunnel addr
     if (tunnel_addr_str) {
         parse_addr(tunnel_addr_str, &tunnel_addr);
-#ifdef ANDROID
-        if (tunnel_addr.host && tunnel_addr.port)
-            log_tx_rx = 0;
-#endif
     }
 
 #ifdef __MINGW32__
