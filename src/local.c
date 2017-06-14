@@ -835,9 +835,14 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
                 // SSR beg
                 server_info _server_info;
                 memset(&_server_info, 0, sizeof(server_info));
-                strcpy(_server_info.host, inet_ntoa(((struct sockaddr_in*)&server_env->addr)->sin_addr));
-                _server_info.port = ((struct sockaddr_in*)&server_env->addr)->sin_port;
-                _server_info.port = _server_info.port >> 8 | _server_info.port << 8;
+                if (server_env->hostname)
+                    strcpy(_server_info.host, server_env->hostname);
+                else
+                    strcpy(_server_info.host, server_env->host);
+                if (verbose) {
+                    LOGI("server_info host %s", _server_info.host);
+                }
+                _server_info.port = server_env->port;
                 _server_info.param = server_env->obfs_param;
                 _server_info.g_data = server_env->obfs_global;
                 _server_info.head_len = get_head_size(ss_addr_to_send.array, 320, 30);
@@ -1486,6 +1491,7 @@ main(int argc, char **argv)
     char *conf_path = NULL;
     char *iface = NULL;
     int remote_num = 0;
+    char *hostnames[MAX_REMOTE_NUM] = {NULL};
     ss_addr_t remote_addr[MAX_REMOTE_NUM];
     char *remote_port = NULL;
     int use_new_profile = 0;
@@ -1501,6 +1507,7 @@ main(int argc, char **argv)
             { "mtu",       required_argument, 0, 0 },
             { "mptcp",     no_argument,       0, 0 },
             { "help",      no_argument,       0, 0 },
+            { "host",      required_argument, 0, 0 },
             {           0,                 0, 0, 0 }
     };
 
@@ -1534,6 +1541,8 @@ main(int argc, char **argv)
                 } else if (option_index == 4) {
                     usage();
                     exit(EXIT_SUCCESS);
+                } else if (option_index == 5) {
+                    hostnames[remote_num] = optarg;
                 }
                 break;
             case 's':
@@ -1833,6 +1842,8 @@ main(int argc, char **argv)
                 serv->udp_port = serv_cfg->server_udp_port;
             }
             serv->host = ss_strdup(host);
+            if (hostnames[i])
+                serv->hostname = hostnames[i];
 
             // Setup keys
             LOGI("initializing ciphers... %s", serv_cfg->method);
@@ -1865,6 +1876,8 @@ main(int argc, char **argv)
                 FATAL("failed to resolve the provided hostname");
             }
             serv->host = ss_strdup(host);
+            if (hostnames[i])
+                serv->hostname = hostnames[i];
             serv->addr = serv->addr_udp = storage;
             serv->addr_len = serv->addr_udp_len = get_sockaddr_len((struct sockaddr *)storage);
             serv->port = serv->udp_port = atoi(port);

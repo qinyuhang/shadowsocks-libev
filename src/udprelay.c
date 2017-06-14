@@ -1017,9 +1017,11 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
     int addr_header_len   = 0;
     uint8_t frag = 0;
 
-    char *host            = server_ctx->tunnel_addr.host;
-    char *port            = server_ctx->tunnel_addr.port;
-    if (host && port) {
+    char host[257] = { 0 };
+    char port[65]  = { 0 };
+    if (server_ctx->tunnel_addr.host && server_ctx->tunnel_addr.port) {
+        strncpy(host, server_ctx->tunnel_addr.host, 256);
+        strncpy(port, server_ctx->tunnel_addr.port, 64);
         uint16_t port_num     = (uint16_t)atoi(port);
         uint16_t port_net_num = htons(port_num);
 
@@ -1074,8 +1076,6 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
 
         frag = *(uint8_t *)(buf->array + 2);
         offset += 3;
-        char host[257] = { 0 };
-        char port[64]  = { 0 };
         struct sockaddr_storage dst_addr;
         memset(&dst_addr, 0, sizeof(struct sockaddr_storage));
 
@@ -1086,8 +1086,7 @@ server_recv_cb(EV_P_ ev_io *w, int revents)
             goto CLEAN_UP;
         }
 
-        //char *addr_header = buf->array + offset;
-        strcpy(addr_header, buf->array + offset);
+        strncpy(addr_header, buf->array + offset, addr_header_len);
     }
 #endif
 
@@ -1417,9 +1416,8 @@ init_udprelay(const char *server_host, const char *server_port,
 
     server_info _server_info;
     memset(&_server_info, 0, sizeof(server_info));
-    strcpy(_server_info.host, inet_ntoa(((struct sockaddr_in*)remote_addr)->sin_addr));
-    _server_info.port = ((struct sockaddr_in*)remote_addr)->sin_port;
-    _server_info.port = _server_info.port >> 8 | _server_info.port << 8;
+    strcpy(_server_info.host, server_host);
+    _server_info.port = atoi(server_port);
     _server_info.g_data = server_ctx->protocol_global;
     _server_info.param = (char *)protocol_param;
     _server_info.key = enc_get_key(cipher_env);
